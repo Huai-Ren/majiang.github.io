@@ -11,7 +11,7 @@
     "lint": "concurrently npm:typecheck npm:lint:eslint",
     "lint:eslint": "eslint src",
     "precommit": "npm run lint"
-  }
+  },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
     "@radix-ui/react-accordion": "^1.2.11",
