@@ -9,8 +9,7 @@
     "typecheck": "tsc -p tsconfig.app.json",
     "lint": "concurrently npm:typecheck npm:lint:eslint",
     "lint:eslint": "eslint src",
-    "precommit": "npm run lint",
-    "prepare": "node scripts/setup-git-hooks.mjs"
+    "precommit": "npm run lint"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
