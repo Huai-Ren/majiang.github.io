@@ -8,7 +8,7 @@ import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter basename={process.env.CLIENT_BASE_PATH || "/"}>
+    <BrowserRouter basename="/">
       <AppContainer>
         <ErrorBoundary
           fallbackRender={({ error, resetErrorBoundary }) => (
@@ -19,5 +19,5 @@ createRoot(document.getElementById("root")!).render(
         </ErrorBoundary>
       </AppContainer>
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
 );
